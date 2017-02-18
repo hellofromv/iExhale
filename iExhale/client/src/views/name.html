@@ -1,0 +1,6 @@
+<div>
+  <span>Name: </span> 
+  <input type="text" name="personName" ng-model="person.personName" required />
+  <button ng-click="nextPage('/#email')">Next</button>
+  <strong><p class="error" ng-show="singleform.personName.$touched && singleform.personName.$error.required">Please fill in your full name.</p></strong>
+</div>

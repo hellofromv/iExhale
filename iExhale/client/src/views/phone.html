@@ -1,0 +1,9 @@
+<div>
+  <span>Phone: </span>
+  <input type="number" name="personPhone" ng-model="person.personPhone" ng-minlength="10" ng-maxlength="10" required />
+  <button ng-click="changePage('/#email')">Back</button>
+  <button ng-hide="singleform.personPhone.$valid">Submit</button>
+  <button ng-if="singleform.personPhone.$valid" ng-click="submit()">Submit</button>
+  <strong><p class="error" ng-show="singleform.personPhone.$touched && singleform.personPhone.$error.required">Please fill in your phone number.</p></strong>
+  <strong><p class="error" ng-if="singleform.personPhone.$touched && !singleform.personPhone.$valid">Not a valid number!</p></strong>
+</div>

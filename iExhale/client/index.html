@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="forms">
+  <head>
+    <meta charset="UTF-8">
+    <title>iExhale Form Exercise</title>
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+  </head>
+  <body>
+    <h1>iExhale Form Validation</h1>
+    <div class="form-container">
+      <form name="singleform">
+        <div ng-view></div>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+
+    <script type="text/javascript" src="src/js/controllers/nameController.js"></script>
+    <script type="text/javascript" src="src/js/controllers/emailController.js"></script>
+    <script type="text/javascript" src="src/js/controllers/phoneController.js"></script>
+    <script type="text/javascript" src="src/js/app.js"></script>
+  </body>
+</html>

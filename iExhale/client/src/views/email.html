@@ -1,0 +1,8 @@
+<div>
+  <span>Email: </span>
+  <input type="email" name="personEmail" ng-model="person.personEmail" required />
+  <button ng-click="backPage('/')">Back</button>
+  <button ng-click="changePage('/#phone')">Next</button>
+  <strong><p class="error" ng-show="singleform.personEmail.$touched && singleform.personEmail.$error.required">Please fill in your email.</p></strong>
+  <strong><p class="error" ng-show="singleform.personEmail.$touched && singleform.personEmail.$error.email">Invalid email!</p></strong>
+</div>
